@@ -406,7 +406,13 @@
     font-weight:700;
     text-transform:uppercase;
   }
-  .love-gif,
+  .love-gif {
+    width:100%;
+    height:100%;
+    border-radius:18px;
+    object-fit:cover;
+    box-shadow:0 14px 28px rgba(15,10,28,0.18);
+  }
   .gif-card img {
     width:100%;
     border-radius:18px;
@@ -446,11 +452,11 @@
   @keyframes blobDrift { 0%,100%{ transform:translate(0,0) scale(1); } 50%{ transform:translate(20px,-18px) scale(1.1); } }
   .love-card {
     position:absolute;
-    bottom:6%;
-    right:8%;
-    width:clamp(160px,22vw,200px);
-    min-height:clamp(160px,22vw,200px);
-    padding:18px;
+    bottom:5%;
+    right:6%;
+    width:clamp(240px,34vw,320px);
+    min-height:clamp(240px,34vw,320px);
+    padding:16px;
     background:rgba(255,255,255,0.95);
     border-radius:28px;
     box-shadow:0 20px 42px rgba(15,10,28,0.24), inset 0 1px 0 rgba(255,255,255,0.8);
@@ -525,7 +531,6 @@
       <div class="glow-blob" style="width:260px; height:260px; background:var(--pink); top:-60px; left:-60px;"></div>
       <div class="glow-blob" style="width:220px; height:220px; background:var(--gold); bottom:-70px; right:10%; animation-delay:2s;"></div>
       <div class="stamp" style="border-color:rgba(255,246,233,0.5); color:var(--cream);">😂<br>edition</div>
-      <!-- <div class="badge badge-gold">year in review</div> -->
       <p class="eyebrow" style="color:var(--gold);">the annual picnic personal edition!</p>
       <h1 class="headline">Digest My,<br>unfiltered nutritional food.</h1>
       <p class="sub" style="color:rgba(255,246,233,0.8);">love, tears, a graduation gown, and way too much tea. buckle up.</p>
@@ -540,15 +545,12 @@
       <p class="eyebrow">love life</p>
       <h1 class="headline">Two years<br>and counting.</h1>
       <p class="sub" style="color:var(--pink-deep);">yep....still very much taken and highly contented.</p>
-      <!-- <p class="sub" style="color:var(--pink-deep);">Men are dogs but mine is an Angel sent from heaven!!!! guyyysss</p> -->
-      <!-- <p class="sub" style="color:var(--pink-deep);">Soorry for those undergoing the pandemic of villain men but we shall pray for you.</p> -->
       <p class="sub" style="color:var(--pink-deep);">God is in the picture and i am blessed.</p>
-      <!-- <p class="sub" style="color:var(--pink-deep);">My heart beats for Brain instead of Lola.</p> -->
       <div class="love-card">
-        <img class="love-gif" src="https://media.giphy.com/media/l0HlHJGFrpSUmxi8A/giphy.gif" alt="floating heart animation">
-        <p>cute love story vibes</p>
+        <video class="love-gif" autoplay muted loop playsinline>
+          <source src="your-video.mp4" type="video/mp4">
+        </video>
       </div>
-      <!-- <p class="couple-caption" style="color:var(--pink-deep);">us, unbothered</p> -->
       <div class="float-heart" style="left:14%; animation-delay:0s;">💗</div>
       <div class="float-heart" style="left:26%; animation-delay:1.1s;">💖</div>
       <div class="float-heart" style="left:8%; animation-delay:2.2s;">💕</div>
@@ -559,7 +561,6 @@
       <div class="stamp" style="border-color:rgba(138,90,0,0.5);">cheers<br>to this</div>
       <p class="eyebrow">something to celebrate</p>
       <h1 class="headline">A whole lot,<br>actually.</h1>
-      <!-- <div class="badge badge-pink">celebrate the wins</div> -->
       <ul class="list">
         <li><span class="tick">✓</span> God is great!</li>
         <li><span class="tick">✓</span> two years in a relationship that still feels good</li>
@@ -569,7 +570,6 @@
         <li><span class="tick">✓</span> Gift of friends, family </li>
         <li><span class="tick">✓</span> getting a new phone soon</li>
         <li><span class="tick">✓</span> Volunteer gig at DICTS to keep me busy.</li>
-        
       </ul>
       <div id="confetti-layer"></div>
     </div>
@@ -579,7 +579,6 @@
       <div class="stamp" style="border-color:rgba(240,235,255,0.5); color:#F0EBFF;">real<br>talk</div>
       <p class="eyebrow" style="color:#D9CCFF;">something to cry about</p>
       <h1 class="headline">The harder<br>parts.</h1>
-      <!-- <div class="badge badge-violet">honest moment</div> -->
       <ul class="list">
         <li><span class="tick">•</span> things with mum and my sister have been strained</li>
         <li><span class="tick">•</span> was sick for basically the whole of last semester and i am still undergoing the effects</li>
@@ -587,7 +586,6 @@
          <li><span class="tick">•</span> Sometimes i laugh at the plans i made..like we still have to keep planning and be delusional.</li>
          <li><span class="tick">•</span> Job applications are crazzyyyyyyy....i need connections.</li>
       </ul>
-      <!-- <p class="sub" style="color:#D9CCFF; margin-top:14px;">Honest opinion-life isn't all sunshine and rainbows.</p> -->
       <div id="rain-layer"></div>
     </div>
 
@@ -596,12 +594,10 @@
       <div class="stamp" style="border-color:rgba(234,251,244,0.5); color:#EAFBF4;">almost<br>there</div>
       <p class="eyebrow" style="color:#BFF3DE;">education</p>
       <h1 class="headline">Graduation,<br>then a masters.</h1>
-      <!-- <div class="badge badge-teal">study mode</div> -->
       <ul class="list">
         <li><span class="tick">→</span> hoping to graduate next year so i hope for nothing to stop me</li>
         <li><span class="tick">→</span> masters, pursued online, right after</li>
       </ul>
-      <!-- <div class="pic-slot left">📸 add a campus / study pic</div> -->
       <div class="floater" style="left:65%; animation-delay:.4s;">📚</div>
       <div class="floater" style="left:78%; animation-delay:1.8s;">✏️</div>
       <div class="floater" style="left:88%; animation-delay:3s;">🎓</div>
@@ -613,7 +609,6 @@
       <p class="eyebrow" style="color:#FFD3C4;">hot tea ☕</p>
       <h1 class="headline">The juicy<br>bit.</h1>
       <div class="fill-note" style="position:static; background:rgba(255,255,255,0.15); color:#FFF0EA; border-color:rgba(255,240,234,0.5);">Guyysss i don't have tea this time but y'all are tea itself😂...and please fill me innnnn 😂😂😂😂</div>
-      <!-- <div class="badge badge-pink">spilling tea</div> -->
       <div class="gif-card"><img src="https://media.giphy.com/media/OmK8lulOMQ9XO/giphy.gif" alt="steaming cup"></div>
       <div class="steam" style="left:20%; animation-delay:0s;"></div>
       <div class="steam" style="left:24%; animation-delay:1s;"></div>
@@ -646,9 +641,7 @@
         <li><span class="tick">✓</span> getting my own place</li>
         <li><span class="tick">✓</span> marriage, somewhere down the line</li>
         <li><span class="tick">✓</span> learning never ends ofcourse</li>
-        
       </ul>
-      <!-- <div class="badge badge-gold">future plan</div> -->
       <div class="floater" style="left:78%; animation-delay:.6s;">🚀</div>
       <div class="floater" style="left:90%; animation-delay:2.3s;">🌟</div>
     </div>
@@ -659,7 +652,6 @@
       <p class="eyebrow">thanks for tuning in</p>
       <h1 class="headline">Same time,<br>next year? 😂</h1>
       <p class="sub" style="color:var(--pink-deep);">questions, roasting, and unsolicited advice welcome.</p>
-      <!-- <div class="badge badge-violet">see you soon</div> -->
       <div class="floater" style="left:70%; animation-delay:.4s;">👋</div>
       <div class="floater" style="left:82%; animation-delay:1.9s;">💫</div>
       <div class="floater" style="left:92%; animation-delay:3.2s;">🎈</div>
